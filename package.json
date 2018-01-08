@@ -1,0 +1,26 @@
+{
+  "name": "backend-stockmarket",
+  "version": "1.0.0",
+  "description": "Node.js Backend",
+  "main": "server.js",
+  "scripts": {
+    "client-install": "cd client && npm install",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "cd client && npm start",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "keywords": [
+    "Node.js",
+    "Express"
+  ],
+  "author": "Chaitanya Karanam",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.17.1",
+    "concurrently": "^3.5.1",
+    "cors": "^2.8.4",
+    "express": "^4.16.2",
+    "mysql": "^2.15.0"
+  }
+}
